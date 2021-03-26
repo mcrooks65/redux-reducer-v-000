@@ -1,13 +1,14 @@
-export function managePresents(state= {
+export function managePresents(state = {
   numberOfPresents: 0,
-}, action){
-  switch (action.type) {
-    case INCREASE:
+}, action) {
+  switch(action.type) {
+
+    case "INCREASE":
       return Object.assign({}, state, {
         numberOfPresents: state.numberOfPresents + 1
       });
 
     default:
-      return satte;
+      return state;
   }
-}
+};
